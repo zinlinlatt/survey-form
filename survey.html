@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./survey.css">
+</head>
+<body>
+    
+    <header> <h1 id="title">Flower Shop</h1></header>
+   
+    <p id="description">Welcome to my flower shop.There afe many kinds of flower in my shop.If you buy ten bouquet of your favorite flower as a gift.
+        If you want to give someone a birthday or propose gift, tell thenm the age of the person you wnat to give them, and I will choose the kind of flowerthey will like and accompany them.
+    </p>
+    <form id="survey-form">
+        <div class="input-headings">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="your name" class="form-inputs" required></input>
+        <br>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" placeholder="you email" class="form-inputs" required></input>
+        <br>
+        <label for="number" id="number-label">Age of the person that you want to give gift</label>
+        <input id="number" type="number" name="number" placeholder="18" min="18" max="100"  class="form-inputs" required></input>
+        <br>
+        <label for="dropdown" id="flower-type">Select flower type</label>
+        <select id="dropdown"  class="form-inputs">
+            <option value="lilies">Lilies</option>
+            <option value="orchids">Orchids</option>
+            <option value="roses">Roses</option>
+            <option value="camations">Camations</option>
+            <option value="buttercup">Buttercup</option>
+        </select>
+        <br>
+        <br>
+        <label for="model_color" id="flower_color"><b>Flower color:</b></label>
+        <br>
+        <input id="model_color" type="radio" id="black" name="color" value="black">
+        <label for="model_color">purple</label>
+        <br>
+        <input id="model_color" type="radio" id="white" name="color" value="white">
+        <label for="model_color">white</label>
+        <br>
+        <input id="model_color" type="radio" id="red" name="color" value="red">
+        <label for="model_color">red</label>
+        <br>
+        <br>
+
+        <label for="features"><b>add features:</b></label>
+        <br>
+        <input id="checkbox" type="checkbox" name="features" value="autopilot">
+        <label for="checkbox">Rose bouquet - $26.23</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="features" value="dual_mortor">
+        <label for="checkbox">Blue Orchid bouquet - $19.64</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="features" value="battery">
+        <label for="checkbox">Rose with Orchid bouquet - $244.90</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="features" value="battery">
+        <label for="checkbox">AROMEO Pink Rose bouquet- $104.03</label>
+        <br>
+        <br>
+
+        <label id="textarea">Additional comments</label>
+        <br>
+        <textarea id="textarea" name="instructions" rows="5" cols="40"></textarea>
+        <br>
+             
+        <input id="submit" type="submit" value="submit" class="submit-button">
+       </div>
+    </form>
+
+</body>
+</html>
